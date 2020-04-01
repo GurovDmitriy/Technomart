@@ -59,18 +59,33 @@
 			<h2 class="main-catalog__caption">Перфораторы</h2>
 			<form class="form-filter">
 				<span class="form-filter__caption">Фильтр:</span>
+					<label class="form-filter__label" for="range-field">Цена:</label>
+					<input class="form-filter__input" type="range" name="range" id="range-field" min="10000" max="50000" step="1000">
+					<output name="range-output"></output>
 				<fieldset class="form-filter__fieldset">
-					<legend class="form-filter__legend">Цена:</legend>
+					<legend class="form-filter__legend">Производители:</legend>
+					<label class="form-filter__label" for="bosh-field">Bosh</label>			
+					<input class="form-filter__input" type="checkbox" name="bosh" id="bosh-field">
+					<label class="form-filter__label" for="interscol-field">Интерскол</label>			
+					<input class="form-filter__input" type="checkbox" name="interscol" id="interscol-field">
+					<label class="form-filter__label" for="makita-field">Makita</label>			
+					<input class="form-filter__input" type="checkbox" name="makita" id="makita-field">
+					<label class="form-filter__label" for="dewalt-field">Dewalt</label>			
+					<input class="form-filter__input" type="checkbox" name="dewalt" id="dewalt-field">
+					<label class="form-filter__label" for="hitachi-field">Hitachi</label>			
+					<input class="form-filter__input" type="checkbox" name="hitachi" id="hitachi-field">		
 				</fieldset>
 				<fieldset class="form-filter__fieldset">
-					<legend class="form-filter__legend">Производители:</legend>					
+					<legend class="form-filter__legend">Питание:</legend>
+					<label class="form-filter__label" for="akk-field">Аккумуляторные</label>
+					<input class="form-filter__input" type="radio" name="battery" value="akk" id="akk-field">
+					<label class="form-filter__label" for="net-field">Сетевые</label>
+					<input class="form-filter__input" type="radio" name="battery" value="net" id="net-field">				
 				</fieldset>
-				<fieldset class="form-filter__fieldset">
-					<legend class="form-filter__legend">Питание:</legend>					
-				</fieldset>
+				<button class="btn" type="button">Показать</button>
 			</form>
+			<span>Сортировка:</span>
 			<ul class="sort-list">
-				<li class="sort-list__item">Сортировка:</li>
 				<li class="sort-list__item"><button class="sort-list__btn">По цене</button></li>
 				<li class="sort-list__item"><button class="sort-list__btn">По типу</button></li>
 				<li class="sort-list__item"><button class="sort-list__btn">По фунуционалу</button></li>
@@ -157,7 +172,13 @@
 					<li class="page-list__item"><a class="page-list__link" href="#">2</a></li>
 					<li class="page-list__item"><a class="page-list__link" href="#">3</a></li>
 					<li class="page-list__item"><a class="page-list__link" href="#">3</a>Следующая</li>
-			</ul>				
+			</ul>	
+			<div class="cart-popup">
+				<b class="cart-popup__caption">Товар добавлен в корзину!</b>
+				<a class="cart-popup__link" href="#">Оформить заказ</a>
+				<button class="cart-popup__btn">Продолжить покупки</button>
+				<button class="cart-popup__btn btn-close">Закрыть</button>
+			</div>			
 		</section>
 		<article class="product-info">
 			<h2 class="product-info__caption">Пара слов о перфораторах</h2>
