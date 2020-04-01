@@ -4,12 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="Магазин электроинструмента">
 	<meta name="keywords" content="Дрель, перфоратор, купить инструмент">
+	<link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style/normalize.css">	
+	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<title>Техномарт-главная</title>
 </head>
 <body>
-	<header class="header">
+	<header class="header" role="banner">
 		<strong class="logo logo__header">Техномарт</strong>
-		<form class="form-search">
+		<form class="form-search" role="search">
 			<label class="form-search__label" for="search-field">Поиск:</label>
 			<input class="form-search__input" type="search" name="search" id="search-field">
 			<button class="form-search__btn" type="submit"><span class="visually-hidden">Найти</span></button>
@@ -22,13 +25,13 @@
 				<a class="menu-order__link" href="#">Корзина:<span>0</span></a>
 			</li>
 			<li class="menu-order__item">
-				<a class="menu-order__link" href="#">Оформить заказ</a>
+				<a class="menu-order__link menu-order__link-order" href="#">Оформить заказ</a>
 			</li>
 		</ul>
-		<nav class="nav">
+		<nav class="nav" role="navigation" aria-label="Разделы">
 			<h1 class="header-caption">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-			<a href="tel:+78125550555">+7 (812) 555-05-55</a>
-			<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/18</p>
+			<a class="nav__tel-link" href="tel:+78125550555">+7 (812) 555-05-55</a>
+			<p class="nav__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/18</p>
 			<ul class="nav-user nav-user--unlogin">
 				<li class="nav-user__item"><a class="nav-user__link" href="#">Войти</a></li>
 				<li class="nav-user__item"><a class="nav-user__link" href="#">Регистрация</a></li>
@@ -49,7 +52,7 @@
 			</ul>
 		</nav>
 	</header>
-	<main class="main">
+	<main class="main" role="main">
 		<section class="promo">
 			<h2 class="promo__caption visually-hidden">Наше предложение</h2>
 			<ul class="promo-list">
@@ -183,7 +186,7 @@
 				</li>								
 			</ul>
 		</section>
-		<article class="about-company">
+		<article class="about-company" role="article">
 			<h2 class="about-company__caption">Компания &laquo;Техномарт&raquo;</h2>
 			<p class="about-company__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
 			<p class="about-company__text">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
@@ -217,7 +220,7 @@
 			</form>
 		</section>
 	</main>
-	<footer>
+	<footer class="footer" role="contantinfo">
 		<section class="contacts">
 			<h2 class="visually-hidden">Наш адрес</h2>
 			<strong class="logo logo__footer">Техномарт</strong>
