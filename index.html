@@ -68,10 +68,17 @@
 					<h3 class="promo-list__caption">Доставка</h3>
 					<a class="promo-list__link" href="#">Бесплатно</a>
 				</li>
-				<li class="promo-list__item">
-					<h3 class="promo-list__caption">Перфораторы</h3>
+			</ul>
+			<ul class="slider">
+				<li class="slider__item">
+					<h3 class="slider__caption">Перфораторы</h3>
 					<p>Настоящие мужские игрушки</p>
-					<a class="promo-list__link" href="#">Открыть каталог</a>
+					<a class="slider__link" href="#">Открыть каталог</a>
+				</li>
+				<li class="slider__item">
+					<h3 class="slider__caption">Дрели</h3>
+					<p>Соседям на радость</p>
+					<a class="slidert__link" href="#">Открыть каталог</a>					
 				</li>
 			</ul>
 		</section>
@@ -156,6 +163,15 @@
 					<h3 class="advantages-list__caption">Доставка</h3>
 					<p class="advantages-list__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
 				</li>
+				<li class="advantages-list__item">
+					<h3 class="advantages-list__caption">Гарантия</h3>
+					<p class="advantages-list__text">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+				</li>
+				<li class="advantages-list__item">
+					<h3 class="advantages-list__caption">Кредит</h3>
+					<p class="advantages-list__text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+					<a class="advantages-list__link" href="#">Отправить заявку</a>
+				</li>								
 			</ul>
 		</section>
 		<article class="about-company">
@@ -174,6 +190,22 @@
 			<p class="map__text">Вы можете забрать товар сами, заехав в наш офис:</p>
 			<div class="map-img"></div>
 			<a class="map__link" href="#">Заблудились? Напишите нам!</a>
+			<div class="map-popup">
+				<button class="map-popup__btn"><span class="visually-hidden">Закрыть</span></button>
+			</div>
+		</section>
+		<section class="form-popup">
+			<h2 class="visually-hidden">Форма обратной связи</h2>
+			<form class="form">
+				<label class="form__fieldset" for="name-field">Ваше имя:</label>
+				<input class="form__item" type="text" name="name" id="name-field">
+				<label class="form__fieldset" for="mail-field">Ваше e-mail:</label>
+				<input class="form__item" type="text" name="mail" id="mail-field">
+				<label class="form__fieldset" for="comment-field">Текст письма:</label>
+				<textarea class="form__item" name="comment" id="comment-field">В свободной форме</textarea>
+				<button class="form__btn form__submit" type="submit">Отправить</button>
+				<button class="form__btn form__close" type="submit"><span class="visually-hidden">Закрыть</span></button>								
+			</form>
 		</section>
 	</main>
 	<footer>
