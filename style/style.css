@@ -68,7 +68,7 @@ html {
   box-sizing: inherit;
 }
 
-/* .visually-hidden {
+.visually-hidden {
 	position: absolute;
 
 	width: 1px;
@@ -80,7 +80,7 @@ html {
 
 	clip: rect(0 0 0 0);
 	overflow: hidden;
-} */
+}
 
 html,
 body {
@@ -200,7 +200,6 @@ body {
 	font-size: 21px;
 	line-height: 18px;
 	text-decoration: none;
-	color: rgba(0, 0, 0, 1);
 }
 
 .nav-user--uplogin {}
@@ -333,7 +332,6 @@ body {
 	font-size: 18px;
 	line-height: 20px;
 	font-weight: bold;	
-	color: rgba(0, 0, 0, 1);
 }
 
 .popular-list__price-old {
@@ -393,14 +391,12 @@ body {
 	line-height: 24px;
 	font-weight: normal;
 	text-transform: uppercase;
-	color: rgba(0, 0, 0, 1);
 }
 
 .advantages__text {
 	font-family: "PT Sans", "Open Sans", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
-	color: rgba(0, 0, 0, 1);
 }
 
 .advantages-menu {
@@ -457,7 +453,6 @@ body {
 	font-family: "PT Sans", "Open Sans", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
-	color: rgba(0, 0, 0, 1);
 }
 
 .advantages-list__link {}
@@ -469,14 +464,12 @@ body {
 	line-height: 24px;
 	font-weight: normal;
 	text-transform: uppercase;
-	color: rgba(0, 0, 0, 1);
 }
 
 .about-company__text {
 	font-style: "PT Sans", "Open Sans", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
-	color: rgba(0, 0, 0, 1);
 }
 
 .about-company-list {
@@ -486,7 +479,6 @@ body {
 .about-company-list__item {
 	font-size: 18px;
 	line-height: 20px;
-	color: rgba(0, 0, 0, 1);
 }
 
 .about-company__link {
@@ -500,14 +492,12 @@ body {
 	line-height: 24px;
 	font-weight: normal;	
 	text-transform: uppercase;
-	color: rgba(0, 0, 0, 1);
 }
 
 .map__text {
 	font-style: "PT Sans", "Open Sans", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
-	color: rgba(0, 0, 0, 1);	
 }
 
 .map__img {}
@@ -530,7 +520,6 @@ body {
 .form__label {
 	font-size: 18px;
 	line-height: 18px;
-	color: rgba(0, 0, 0, 1);
 }
 
 .form__input {
@@ -605,4 +594,117 @@ body {
 
 .copyright__link span {
 	color: rgba(255, 209, 128, 1);
+}
+
+
+/* Каталог */
+
+.main {}
+
+.main-catalog {}
+
+.breadcrumps {}
+
+.breadcrumps__item {}
+
+.breadcrumps__link {
+	font-family: "PT Sans", "Open Sans", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.main-catalog__caption {
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: normal;	
+	text-transform: uppercase;
+	color: rgba(50, 66, 92, 1);
+}
+
+.form-filter {}
+
+.form-filter__caption {
+	font-family: "PT Sans", "Open Sans", sans-serif;	
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.form-filter__fieldset {}
+
+.form-filter__label {
+	font-size: 15px;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+
+.form-filter__input {}
+
+.form-filter__legend {
+	font-family: "PT Sans", "Open Sans", sans-serif;
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.form-filter__btn {
+	font-family: "PT Sans", "Open Sans", sans-serif;	
+	font-size: 13px;
+	line-height: 18px;
+	color: rgba(0, 0, 0, 1);
+
+	background-color: transparent;
+	border: 2px solid rgba(229, 229, 229, 1);
+}
+
+.sort-list {}
+
+.sort-list__caption {
+	font-family: "PT Sans", "Open Sans", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.sort-list__link {}
+
+.page-list {}
+
+.page-list__item {}
+
+.page-list__link {
+	font-family: "PT Sans", "Open Sans", sans-serif;	
+	font-size: 13px;
+	line-height: 18px;
+	color: rgba(0, 0, 0, 1);
+
+	background-color: transparent;
+	border: 2px solid rgba(229, 229, 229, 1);
+}
+
+.cart-popup {}
+.cart-popup__caption {}
+.cart-popup__link {}
+.cart-popup__btn {}
+.btn-close {}
+
+.product-info {
+	background-color: rgba(242, 246, 248, 1);
+}
+
+.product-info__caption {
+	font-size: 30px;
+	line-height: 24px;
+	font-weight: normal;	
+	text-transform: uppercase;
+}
+
+.product-info__text {
+	font-family: "PT Sans", "Open Sans", sans-serif;	
+	font-size: 13px;
+	line-height: 24px;
 }
