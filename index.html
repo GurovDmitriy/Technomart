@@ -10,9 +10,9 @@
 	<title>Техномарт-главная</title>
 </head>
 <body>
-	<header class="header" role="banner">
-		<strong class="logo logo__header">Техномарт</strong>
-		<form class="form-search" role="search">
+	<header class="header">
+		<strong class="logo">Техномарт</strong>
+		<form class="form-search">
 			<label class="form-search__label" for="search-field">Поиск:</label>
 			<input class="form-search__input" type="search" name="search" id="search-field">
 			<button class="form-search__btn" type="submit"><span class="visually-hidden">Найти</span></button>
@@ -28,7 +28,7 @@
 				<a class="menu-order__link menu-order__link-order" href="#">Оформить заказ</a>
 			</li>
 		</ul>
-		<nav class="nav" role="navigation" aria-label="Разделы">
+		<nav class="nav">
 			<h1 class="header-caption">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 			<a class="nav__tel-link" href="tel:+78125550555">+7 (812) 555-05-55</a>
 			<p class="nav__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/18</p>
@@ -52,7 +52,7 @@
 			</ul>
 		</nav>
 	</header>
-	<main class="main" role="main">
+	<main class="main">
 		<section class="promo">
 			<h2 class="promo__caption visually-hidden">Наше предложение</h2>
 			<ul class="promo-list">
@@ -78,6 +78,7 @@
 				</li>
 			</ul>
 			<section class="slider">
+				<h2 class="visually-hidden">Рекламный слайдер</h2>
 				<figure class="slider__item">
 					<h3 class="slider__caption">Перфораторы</h3>
 					<p class="slider__text">Настоящие мужские игрушки</p>
@@ -200,7 +201,7 @@
 				</li>								
 			</ul>
 		</section>
-		<article class="about-company" role="article">
+		<article class="about-company">
 			<h2 class="about-company__caption">Компания &laquo;Техномарт&raquo;</h2>
 			<p class="about-company__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
 			<p class="about-company__text">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
@@ -234,14 +235,12 @@
 			</form>
 		</section>
 	</main>
-	<footer class="footer" role="contantinfo">
+	<footer class="footer">
 		<section class="contacts">
 			<h2 class="visually-hidden">Наш адрес</h2>
 			<strong class="logo logo__footer">Техномарт</strong>
 			<nav class="nav nav-footer">
 				<h2 class="visually-hidden">Навигация по сайту</h2>
-				<a href="tel:+78125550555">+7 (812) 555-05-55</a>
-				<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/18</p>
 				<ul class="nav-site nav-site__footer">
 					<li class="nav-site__item"><a class="nav-site__link" href="#">Главная</a></li>
 					<li class="nav-site__item"><a class="nav-site__link" href="#">Компания</a></li>
@@ -253,9 +252,9 @@
 					<li class="nav-site__item"><a class="nav-site__link" href="#">Материалы</a></li>
 					<li class="nav-site__item"><a class="nav-site__link" href="#">Техника</a></li>
 				</ul>
+				<a class="nav__tel-link" href="tel:+78125550555">+7 (812) 555-05-55</a>
+				<p class="nav__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/18</p>	
 			</nav>		
-			<a class="nav__tel-link" href="tel:+78125550555">+7 (812) 555-05-55</a>
-			<p class="nav__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/18</p>			
 		</section>
 		<section class="copyright">
 			<h2 class="visually-hidden">Информация о правах</h2>
