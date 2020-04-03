@@ -130,7 +130,7 @@ body {
 /* header */
 
 .header {
-	padding-bottom: 60px;
+	min-height: 320px;
 
 	background: rgba(243, 247, 248, 1);
 }
@@ -421,6 +421,7 @@ body {
 	justify-content: space-between;
 
 	min-height: 409px;
+	margin-bottom: 53px;
 }
 
 
@@ -556,7 +557,22 @@ body {
 
 .popular {}
 
-.popular__caption {
+.popular-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	min-height: 89px;
+	padding: 10px 24px;
+	margin-bottom: 20px;
+
+	background-color: rgba(249, 245, 240, 1);
+}
+
+.popular-top__caption {
+	margin: 0;
+
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: normal;
@@ -564,30 +580,68 @@ body {
 	color: rgba(50, 66, 92, 1);
 }
 
-.popular__link {}
+.popular-top__link {
+	width: 253px;
+}
 
 .popular-list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+
+
+	min-height: 318px;
+	padding: 0;
+
 	list-style: none;
 }
 
 .popular-list__item {}
 
 .popular-list__link {
-	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
 
-	border: 2px solid rgba(244, 234, 234, 1);
+	width: 220px;
+	min-height: 318px;
+	padding-bottom: 20px;
+
+	text-decoration: none;
+	text-align: center;
+
+	border: 1px solid rgba(244, 234, 234, 1);
+
 }
 
-.popular-list__img {}
+.popular-list__img {
+	display: block;
+	
+	width: 218px;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 28px;
+
+	line-height: 0;
+}
 
 .popular-list__text {
+	width: 190px;
+	margin: 0;
+	margin-bottom: auto;
+
 	font-family: "PT Sans", "Open Sans", sans-serif;
 	font-size: 18px;
 	line-height: 20px;
-	font-weight: bold;	
+	font-weight: bold;
+	color: rgba(0, 0, 0, 1);
 }
 
 .popular-list__price-old {
+	margin-bottom: auto;
+
 	font-family: "PT Sans", "Open Sans", sans-serif;
 	font-size: 17px;
 	line-height: 18px;
@@ -600,6 +654,8 @@ body {
 .popular-list__price--show {}
 
 .popular-list__price {
+	width: 141px;
+	
 	font-family: "PT Sans", "Open Sans", sans-serif;
 	font-size: 17px;
 	line-height: 18px;
