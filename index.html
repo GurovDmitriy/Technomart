@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="Магазин электроинструмента">
 	<meta name="keywords" content="Дрель, перфоратор, купить инструмент">
-	<link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style/normalize.css">	
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<title>Техномарт-главная</title>
@@ -141,10 +140,10 @@
 			</ul>
 		</nav>
 	</header>
-	<main class="main">
-		<section class="promo">
+	<main class="main container">
+		<section class="promo wrapper">
 			<h2 class="promo__caption visually-hidden">Наше предложение</h2>
-			<ul class="promo-list">
+			<ul class="promo-list promo-list-first">
 				<li class="promo-list__item promo-list__item-new">
 					<h3 class="promo-list__caption">Материалы</h3>
 					<a class="promo-list__link btn" href="#">На любой вкус</a>
@@ -153,6 +152,20 @@
 					<h3 class="promo-list__caption">Инструмент</h3>
 					<a class="promo-list__link btn" href="#">На все случаи</a>
 				</li>
+				<li class="promo-list__item slider">
+					<div class="slider__item">
+						<h3 class="slider__caption">Перфораторы</h3>
+						<p class="slider__text">Настоящие мужские игрушки</p>
+						<a class="slider__link btn" href="#">Открыть каталог</a>
+					</div>
+					<div class="slider__item">
+						<h3 class="slider__caption">Дрели</h3>
+						<p class="slider__text">Соседям на радость</p>
+						<a class="slider__link btn" href="#">Открыть каталог</a>					
+					</div>
+				</li>
+			</ul>
+			<ul class="promo-list promo-list-second">			
 				<li class="promo-list__item">
 					<h3 class="promo-list__caption">Техника</h3>
 					<a class="promo-list__link btn" href="#">Для стройки</a>
@@ -165,22 +178,7 @@
 					<h3 class="promo-list__caption">Доставка</h3>
 					<a class="promo-list__link btn" href="#">Бесплатно</a>
 				</li>
-			</ul>
-			<section class="slider">
-				<h2 class="visually-hidden">Рекламный слайдер</h2>
-				<figure class="slider__item">
-					<h3 class="slider__caption">Перфораторы</h3>
-					<p class="slider__text">Настоящие мужские игрушки</p>
-					<a class="slider__link btn" href="#">Открыть каталог</a>
-				</figure>
-				<figure class="slider__item">
-					<h3 class="slider__caption">Дрели</h3>
-					<p class="slider__text">Соседям на радость</p>
-					<a class="slider__link btn" href="#">Открыть каталог</a>					
-				</figure>
-				<button type="button">Назад</button>
-				<button type="button">Вперед</button>
-			</section>
+			</ul>				
 		</section>
 		<section class="popular">
 			<h2 class="popular__caption">Популярные товары:</h2>
