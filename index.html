@@ -221,9 +221,11 @@
 			</ul>
 		</section>
 		<section class="manufactured">
-			<h2 class="manufactured__caption">Популярные производители</h2>
-				<a class="manufactured__link btn" href="#">Все производители</a>
-				<ul class="manufactured-list">
+			<div class="popular-top wrapper">
+				<h2 class="popular-top__caption">Популярные производители</h2>
+				<a class="popular-top__link btn" href="#">Все производители</a>
+			</div>
+			<ul class="manufactured-list wrapper">
 					<li class="manufactured-list__item">
 						<a class="manufactured-list__link" href="#">
 							<img class="manufactured-list__img" src="image/img/bosch.jpg"  width="126" height="36" alt="bosch">
@@ -264,32 +266,36 @@
 							<img class="manufactured-list__img" src="image/img/Metabo.jpg" width="204" height="69" alt="Metabo">
 						</a>
 					</li>
-				</ul>
-		</section>
-		<section class="advantages">
-			<h2 class="advantages__caption">Сервисы</h2>
-			<p class="advantages__text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-			<ul class="advantages-menu">
-				<li class="advantages-menu__item"><a href="#" class="advantages-menu__link advantages-menu__link--active">Доставка</a></li>
-				<li class="advantages-menu__item"><a href="#" class="advantages-menu__link">Гарантия</a></li>
-				<li class="advantages-menu__item"><a href="#" class="advantages-menu__link">Кредит</a></li>
-			</ul>
-			<ul class="advantages-list">
-				<li class="advantages-list__item">
-					<h3 class="advantages-list__caption">Доставка</h3>
-					<p class="advantages-list__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-				</li>
-				<li class="advantages-list__item">
-					<h3 class="advantages-list__caption">Гарантия</h3>
-					<p class="advantages-list__text">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
-				</li>
-				<li class="advantages-list__item">
-					<h3 class="advantages-list__caption">Кредит</h3>
-					<p class="advantages-list__text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-					<a class="advantages-list__link btn" href="#">Отправить заявку</a>
-				</li>								
 			</ul>
 		</section>
+		<div class="container container-advantages">
+			<section class="advantages wrapper">
+				<h2 class="advantages__caption">Сервисы</h2>
+				<p class="advantages__text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+				<div class="advantages-menu-shell">
+					<ul class="advantages-menu">
+						<li class="advantages-menu__item"><a href="#" class="advantages-menu__link advantages-menu__link--active">Доставка</a></li>
+						<li class="advantages-menu__item"><a href="#" class="advantages-menu__link">Гарантия</a></li>
+						<li class="advantages-menu__item"><a href="#" class="advantages-menu__link">Кредит</a></li>
+					</ul>
+					<ul class="advantages-list">
+						<li class="advantages-list__item">
+							<h3 class="advantages-list__caption">Доставка</h3>
+							<p class="advantages-list__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, <br>поднимая его на ваш этаж!</p>
+						</li>
+	<!-- 					<li class="advantages-list__item">
+										<h3 class="advantages-list__caption">Гарантия</h3>
+										<p class="advantages-list__text">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+									</li>
+									<li class="advantages-list__item">
+										<h3 class="advantages-list__caption">Кредит</h3>
+										<p class="advantages-list__text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+										<a class="advantages-list__link btn" href="#">Отправить заявку</a>
+									</li> -->								
+					</ul>
+				</div>
+			</section>
+		</div>
 		<article class="about-company">
 			<h2 class="about-company__caption">Компания &laquo;Техномарт&raquo;</h2>
 			<p class="about-company__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
