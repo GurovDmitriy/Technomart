@@ -140,6 +140,8 @@ body {
 	flex-wrap: wrap;
 }
 
+/* top-menu */
+
 .logo {
 	padding: 9px 55px;
 
@@ -216,10 +218,10 @@ body {
 
 .menu-order__item {}
 
+
 .menu-order__link {
 	display: block;
 	padding: 12px 21px;
-	padding-left: 32px;
 
 	font-size: 17px;
 	line-height: 18px;
@@ -227,15 +229,41 @@ body {
 	color: rgba(255, 255, 255, 1);
 }
 
-.menu-order__link-order {
-	padding-left: 21px;
+.menu-order__item:nth-child(1) .menu-order__link {
+	padding-left: 50px;
+}
 
+.menu-order__item:nth-child(2) .menu-order__link {
+	padding-left: 50px;
+}
+
+.menu-order__item:nth-child(3) .menu-order__link {
 	background-color: rgba(99, 166, 62, 1);
 }
 
+
+/* nav */
+
 .nav {}
 
+.nav-shell {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	min-height: 140px;
+	padding-top: 46px;
+}
+
+.nav-shell > * {
+	width: 270px;
+}
+
 .header-caption {
+	margin: 0;
+	padding: 10px 50px;
+	padding-top: 0;
+	padding-right: 20px;
+
 	font-size: 16px;
 	line-height: 23px;
 	font-weight: normal;
@@ -243,20 +271,39 @@ body {
 	color: rgba(238, 54, 67, 1);
 }
 
-.nav__tel-link {
+.tel-box {
+
+}
+
+.tel-box__link {
+	display: block;
+	padding: 9px 21px;
+
 	font-size: 21px;
 	line-height: 18px;
 	color: rgba(238, 54, 67, 1);
 	text-decoration: none;
+	text-align: center;
+
+	border: 3px solid rgba(255, 255, 255, 1);
 }
 
-.nav__adress {
+.tel-box__adress {
+	margin: 0;
+
 	font-size: 14px;
 	line-height: 24px;
+	text-align: center;
 	color: rgba(50, 66, 92, 1);
 }
 
 .nav-user {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+
 	list-style: none;
 }
 
@@ -264,13 +311,26 @@ body {
 
 .nav-user__item {}
 
+
 .nav-user__link {
+	display: block;
+	padding: 12px 21px;
+
 	font-size: 21px;
 	line-height: 18px;
 	text-decoration: none;
+	color: rgba(0, 0, 0, 1);
+
+	background-color: rgba(255, 255, 255, 1);
 }
 
-.nav-user--uplogin {}
+.nav-user__item:first-child .nav-user__link {
+	padding-left: 50px;
+}
+
+.nav-user--uplogin {
+	display: none;
+}
 
 .nav-user__name {}
 
