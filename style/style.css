@@ -951,13 +951,41 @@ body {
 
 .footer {}
 
-.contacts {
+.container-contacts {
 	background-color: rgba(50, 66, 92, 1);
 }
 
-.logo__footer {}
+.contacts {
 
-.nav-footer {}
+}
+
+.nav-footer {	
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: space-between;
+	justify-content: flex-start;
+
+	height: 180px;
+}
+
+.logo__footer {
+	order: -3;
+}
+
+.nav-footer .nav__tel-link {
+	order: -1;
+}
+
+.nav-footer .nav__adress {
+	order: -2;	
+}
+
+.nav-site__footer {
+	width: 540px;
+
+	box-shadow: none;
+}
 
 .nav-site__item {}
 
@@ -977,8 +1005,17 @@ body {
 	color: rgba(255, 255, 255, 1);	
 }
 
+.container-copyright {
+	padding: 35px 0;
+
+	background-color: rgba(41, 52, 73, 1);	
+}
+
 .copyright {
-	background-color: rgba(41, 52, 73, 1);
+	display: flex;
+	flex-wrap: wrap
+	align-items: flex-start;
+	justify-content: space-between;
 }
 
 .copyright__text {
