@@ -830,9 +830,27 @@ body {
 
 .advantages-list__link {}
 
-.about-company {}
+.about-company-shell {
+	display: flex;
+	justify-content: space-between;
+
+	min-height: 368px;
+	padding-top: 86px;
+	padding-bottom: 86px;
+}
+
+.about-company {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	width: 520px;
+	min-height: 368px;	
+}
 
 .about-company__caption {
+	margin: 0;
+
 	font-size: 30px;
 	line-height: 24px;
 	font-weight: normal;
@@ -840,12 +858,17 @@ body {
 }
 
 .about-company__text {
+	margin: 0;
+
 	font-style: "PT Sans", "Open Sans", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 }
 
 .about-company-list {
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 }
 
@@ -855,12 +878,21 @@ body {
 }
 
 .about-company__link {
-
+	width: 220px;
 }
 
-.map {}
+.map {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	min-height: 368px;
+	width: 300px;
+}
 
 .map__caption {
+	margin: 0;
+
 	font-size: 30px;
 	line-height: 24px;
 	font-weight: normal;	
@@ -868,6 +900,9 @@ body {
 }
 
 .map__text {
+	width: 180px;
+	margin: 0;
+
 	font-style: "PT Sans", "Open Sans", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
@@ -875,19 +910,21 @@ body {
 
 .map__img {}
 
-.map__link {}
-
-.map-popup {
-	background: rgba(238, 234, 227, 1) url("../image/img/map-big.jpg") no-repeat;
-	box-shadow:  0 8px 16px 8px rgba(0, 0, 0, 0.5);
+.map__link {
+	width: 300px;
 }
 
-.map-popup__btn {}
+/* .map-popup {
+	background: rgba(238, 234, 227, 1) url("../image/img/map-big.jpg") no-repeat;
+	box-shadow:  0 8px 16px 8px rgba(0, 0, 0, 0.5);
+} */
+
+/* .map-popup__btn {}
 
 .form-popup {
 	box-shadow:  0 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
-
+ */
 .form {}
 
 .form__label {
