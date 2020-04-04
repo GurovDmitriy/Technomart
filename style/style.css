@@ -1176,13 +1176,28 @@ body {
 
 .main {}
 
-.main-catalog {}
+.main-catalog {
+ padding-top: 0;
+}
 
-.breadcrumps {}
+.breadcrumps {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-start;
+
+	min-height: 59px;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
 
 .breadcrumps__item {}
 
 .breadcrumps__link {
+	display: block;
+	padding: 5px 20px;
 	font-family: "PT Sans", "Open Sans", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
@@ -1191,11 +1206,21 @@ body {
 }
 
 .main-catalog__caption {
+	margin: 0;
+	margin-bottom: 20px;
+
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: normal;	
 	text-transform: uppercase;
 	color: rgba(50, 66, 92, 1);
+
+	background-color: rgba(242, 246, 248, 1);
+}
+
+.catalog-box {
+	display: flex;
+	justify-content: space-between;
 }
 
 .form-filter {}
@@ -1235,9 +1260,28 @@ body {
 	border: 2px solid rgba(229, 229, 229, 1);
 }
 
-.sort-list {}
+.sort-box {
+	width: 700px;
+}
+
+.sort-list {
+	display: flex;
+	justify-content: space-between;
+
+	padding: 10px;
+	margin-bottom: 20px;
+
+	background-color: rgba(247, 243, 236, 1);
+}
 
 .sort-list__caption {
+	font-family: "PT Sans", "Open Sans", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.sort-list__link {
 	font-family: "PT Sans", "Open Sans", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
@@ -1245,20 +1289,46 @@ body {
 	text-decoration: none;
 }
 
-.sort-list__link {}
+.catalog-list .popular-list__link {
+	margin-bottom: 20px;
+}
 
-.page-list {}
+
+.page-list {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+
+	width: 700px;
+	margin: 0;
+	padding: 0;
+	margin-left: auto;
+	margin-bottom: 60px;
+
+	list-style: none;
+}
 
 .page-list__item {}
 
+.page-list__item--hidden {
+	display: none;
+}
+
 .page-list__link {
+	display: block;
+
+	margin-right: 10px;
+	padding: 9px 13px;
+
 	font-family: "PT Sans", "Open Sans", sans-serif;	
 	font-size: 13px;
 	line-height: 18px;
+	text-decoration: none;
 	color: rgba(0, 0, 0, 1);
 
 	background-color: transparent;
-	border: 2px solid rgba(229, 229, 229, 1);
+	border: 1px solid rgba(229, 229, 229, 1);
+	border-radius: 3px;
 }
 
 .cart-popup {}
@@ -1267,7 +1337,10 @@ body {
 .cart-popup__btn {}
 .btn-close {}
 
-.product-info {
+.container-product-info {
+	padding-top: 67px;
+	padding-bottom: 73px;
+
 	background-color: rgba(242, 246, 248, 1);
 }
 
