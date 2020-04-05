@@ -127,6 +127,14 @@ body {
 	border-radius: 3px;
 }
 
+.btn:hover {
+ background-color: #ca2c37;
+}
+
+.btn:active {
+	background-color: #ba2732;
+}
+
 .icon {
 	position: absolute;
 	top: 50%;
@@ -566,7 +574,6 @@ body {
 	background-color: 1d2739;
 }
 
-
 /* main */
 
 .main {
@@ -619,10 +626,52 @@ body {
 }
 
 .promo-list__item {
+	position: relative;
+
 	width: 300px;
 	min-height: 123px;
 
 	padding: 20px 23px;
+
+	overflow: hidden;	
+}
+
+.promo-list__item--new::before {
+	content: "New";
+	position: absolute;
+	right: -27px;
+	top: 9px;
+
+	display: block;
+
+	width: 100px;
+	padding: 3px;
+
+	font-family: "PT Sans", "Open Sans", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: lowercase;	
+	text-align: center;
+	color: rgba(255, 255, 255, 1);
+
+	background-color: #ee3643;
+
+	transform: rotate(45deg);
+}
+
+.promo-list__item .icon {
+	left: 80%;
+
+	fill: #ffffff;
+	transform: translate(-50%, -50%);
+}
+
+.promo-list__item:hover .icon {
+	fill: #cccccc;
+}
+
+.promo-list__item:active .icon {
+	fill: #b2b2b2;
 }
 
 .promo-list-first .promo-list__item:nth-of-type(1) {
@@ -658,8 +707,18 @@ body {
 }
 
 .promo-list__link {
-	background-color: rgba(0, 0, 0, 0.1)
+	background-color: rgba(0, 0, 0, 0.1);
 }
+
+.promo-list__link:hover {
+	background-color: rgba(0, 0, 0, 0.2)
+}
+
+.promo-list__link:active {
+	background-color: rgba(0, 0, 0, 0.3)
+}
+
+
 
 .slider {
 	position: relative;
