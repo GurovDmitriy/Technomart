@@ -331,7 +331,7 @@ body {
 	background-color: #518534;
 }
 
-.nav-shell {
+.nav-box {
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
@@ -341,7 +341,7 @@ body {
 	padding-top: 46px;
 }
 
-.header-caption {
+.nav__caption {
 	width: 260px;
 	margin: 0;
 	padding: 0px 50px;
@@ -355,11 +355,11 @@ body {
 	color: rgba(238, 54, 67, 1);
 }
 
-.tel-box {
+.tel {
 	width: 270px;
 }
 
-.tel-box__link {
+.tel__link {
 	display: block;
 
 	padding: 10px 10px;
@@ -373,7 +373,7 @@ body {
 	border: 3px solid rgba(255, 255, 255, 1);
 }
 
-.tel-box__adress {
+.tel__adress {
 	margin: 0;
 
 	font-size: 14px;
@@ -395,6 +395,8 @@ body {
 }
 
 .nav-user__link {
+	position: relative;
+
 	display: block;
 
 	width: 150px;
@@ -409,15 +411,31 @@ body {
 	background-color: rgba(255, 255, 255, 1);
 }
 
-.nav-user__item:first-child .nav-user__link {
-	padding-left: 50px;
+.nav-user__link:hover {
+	color: #ee3643;
+}
+
+.nav-user__link:active {
+	color: #c5c5c5;
+}
+
+.nav-user__icon-login {
+	transform: translate(50%, -50%)
+}
+
+.nav-user__link:hover .icon {
+	fill: #32425c;
+}
+
+.nav-user__link:active .icon {
+	fill: #c5c5c5;
 }
 
 .nav-user--show {
 	display: flex;
 }
 
-.nav-user-in {
+.nav-login {
 	display: none;
 	align-items: flex-start;
 	justify-content: space-around;
@@ -431,7 +449,9 @@ body {
 	list-style: none;
 }
 
-.nav-user-in__item:first-child .nav-user-in__link {
+.nav-login__item:first-child .nav-login__link {
+	position: relative;
+
 	display: block;
 	
 	width: 310px;
@@ -446,13 +466,60 @@ body {
 	background-color: rgba(255, 255, 255, 1);
 }
 
-.nav-user-in__link {
+.nav-login__icon-logout {
+	left: 90%;
+	
+	width: 20px;
+	height: 17px;
+}
+
+.nav-login__icon-user {
+	width: 20px;
+	height: 18px;
+	
+	transform: translate(50%, -50%);
+}
+
+.nav-login__link {
 	font-size: 16px;
 	line-height: 18px;
 	color: rgba(50, 66, 92, 1);
 }
 
-.nav-user-in--show {
+.nav-login__item:first-child .nav-login__link:hover {
+	color: #ee3643;
+}
+
+.nav-login__item:first-child .nav-login__link:active {
+	color: #c5c5c5;
+}
+
+.nav-login__link:hover {
+	color: #ee3643;
+}
+
+.nav-login__link:active {
+	color: #c5c5c5;
+}
+
+.nav-login__link:hover .icon {
+	fill: #32425c;
+}
+
+.nav-login__link:active .icon {
+	fill: #c5c5c5;
+}
+
+.nav-user--show {
+	display: flex;
+}
+
+
+.nav-user--show {
+	display: flex;
+}
+
+.nav-login--show {
 	display: flex;
 }
 

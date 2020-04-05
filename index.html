@@ -123,20 +123,37 @@
 			</div>
 		</div>
 		<nav class="nav wrapper">
-			<div class="nav-shell">
-				<h1 class="header-caption">Интернет-магазин строительных материалов <br>и инструментов для ремонта</h1>
-				<div class="tel-box">
-					<a class="tel-box__link" href="tel:+78125550555">+7 (812) 555-05-55</a>
-					<p class="tel-box__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/18</p>
+			<div class="nav-box">
+				<h1 class="nav__caption">Интернет-магазин строительных материалов <br>и инструментов для ремонта</h1>
+				<div class="tel">
+					<a class="tel__link" href="tel:+78125550555">+7 (812) 555-05-55</a>
+					<p class="tel__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/18</p>
 				</div>
-				<ul class="nav-user nav-user--show">
-					<li class="nav-user__item"><a class="nav-user__link" href="#">Войти</a></li>
+				<ul class="nav-user">
+					<li class="nav-user__item">
+						<a class="nav-user__link" href="#">
+							<svg class="icon nav-user__icon-login" width="20px" height="17px">
+								<use xlink:href="#icon-login"></use>
+							</svg>	
+							Войти
+						</a>
+					</li>
 					<li class="nav-user__item"><a class="nav-user__link" href="#">Регистрация</a></li>
 				</ul>
-				<ul class="nav-user-in">
-					<li class="nav-user-in__item"><a class="nav-user-in__link" href="">Гуров Дмитрий</a></li>
-					<li class="nav-user-in__item"><a class="nav-user-in__link" href="#">Мои заказы</a></li>
-					<li class="nav-user-in__item"><a class="nav-user-in__link" href="#">Личный кабинет</a></li>
+				<ul class="nav-login nav-login--show">
+					<li class="nav-login__item">
+						<a class="nav-login__link" href="#">
+							<svg class="icon nav-login__icon-logout" width="20px" height="17px">
+								<use xlink:href="#icon-logout"></use>
+							</svg>
+							<svg class="icon nav-login__icon-user" width="20px" height="18px">
+								<use xlink:href="#icon-user"></use>
+							</svg>								
+							Гуров Дмитрий
+						</a>
+					</li>
+					<li class="nav-login__item"><a class="nav-login__link" href="#">Мои заказы</a></li>
+					<li class="nav-login__item"><a class="nav-login__link" href="#">Личный кабинет</a></li>
 				</ul>
 			</div>		
 			<ul class="nav-site">
