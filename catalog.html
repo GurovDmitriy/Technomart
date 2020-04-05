@@ -74,47 +74,56 @@
 			<h2 class="main-catalog__caption popular-top">Перфораторы</h2>
 			<div class="catalog-box">
 				<form class="form-filter">
+					<span class="form-filter__caption">Фильтр</span>
 					<fieldset class="form-filter__fieldset">
-						<legend class="form-filter__legend">Фильтр:</legend>	
-						<label class="form-filter__label" for="range-field">Цена:</label>
-						<input class="form-filter__input" type="range" name="range" id="range-field" min="10000" max="50000" step="1000">
-						<output name="range-output"></output>
+						<legend class="form-filter__legend">Цена:</legend>
+						<div class="range">	
+							<label class="form-filter__label visually-hidden" for="range-field">Диапазон цен</label>
+							<input class="form-filter__input visually-hidden" type="range" name="range" id="range-field" min="10000" max="50000" step="1000">
+							<div class="bar">
+								<div class="status-bar"></div>
+							</div>
+						</div>
+						<div class="output-box">
+							<output class="form-filter__output" name="range-output-start">0</output>
+							<output class="form-filter__output" name="range-output-end">30000</output>
+						</div>
 					</fieldset>	
 					<fieldset class="form-filter__fieldset">
 						<legend class="form-filter__legend">Производители:</legend>
-						<ul>
-							<li>
+						<ul class="checkbox-list">
+							<li class="checkbox-list__item">
+								<input class="form-filter__input visually-hidden" type="checkbox" name="bosh" id="bosh-field">
 								<label class="form-filter__label" for="bosh-field">Bosh</label>			
-								<input class="form-filter__input" type="checkbox" name="bosh" id="bosh-field">
 							</li>
-							<li>
+							<li class="checkbox-list__item">
+								<input class="form-filter__input visually-hidden" type="checkbox" name="interscol" id="interscol-field">
 								<label class="form-filter__label" for="interscol-field">Интерскол</label>			
-								<input class="form-filter__input" type="checkbox" name="interscol" id="interscol-field">
 							</li>
-							<li>
+							<li class="checkbox-list__item">
+								<input class="form-filter__input visually-hidden" type="checkbox" name="makita" id="makita-field">
 								<label class="form-filter__label" for="makita-field">Makita</label>			
-								<input class="form-filter__input" type="checkbox" name="makita" id="makita-field">
 							</li>
-							<li>
+							<li class="checkbox-list__item">
+								<input class="form-filter__input visually-hidden" type="checkbox" name="dewalt" id="dewalt-field">
 								<label class="form-filter__label" for="dewalt-field">Dewalt</label>			
-								<input class="form-filter__input" type="checkbox" name="dewalt" id="dewalt-field">
 							</li>
-							<li>
+							<li class="checkbox-list__item">
+								<input class="form-filter__input visually-hidden" type="checkbox" name="hitachi" id="hitachi-field">
 								<label class="form-filter__label" for="hitachi-field">Hitachi</label>			
-								<input class="form-filter__input" type="checkbox" name="hitachi" id="hitachi-field">
 							</li>
 						</ul>
 					</fieldset>
 					<fieldset class="form-filter__fieldset">
 						<legend class="form-filter__legend">Питание:</legend>
-						<ul>
-							<li>
+						<ul class="radio-list">
+							<li class="radio-list__item">
+								<input class="form-filter__input visually-hidden" type="radio" name="battery" value="akk" id="akk-field">
 								<label class="form-filter__label" for="akk-field">Аккумуляторные</label>
-								<input class="form-filter__input" type="radio" name="battery" value="akk" id="akk-field">
 							</li>
-							<li>
+							<li class="radio-list__item">
+								<input class="form-filter__input visually-hidden" type="radio" name="battery" value="net" id="net-field">		
 								<label class="form-filter__label" for="net-field">Сетевые</label>
-								<input class="form-filter__input" type="radio" name="battery" value="net" id="net-field">		
 							</li>
 						</ul>		
 					</fieldset>
