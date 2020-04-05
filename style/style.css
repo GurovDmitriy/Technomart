@@ -64,7 +64,7 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*, *::before, *::after {
   box-sizing: inherit;
 }
 
@@ -1016,6 +1016,10 @@ body {
 }
 
 .form__item-submit {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
 	width: 100%;
 
 	padding: 37px 0;
@@ -1218,8 +1222,16 @@ body {
 }
 
 .catalog-box {
+	position: relative;
+
 	display: flex;
 	justify-content: space-between;
+}
+
+.add-cart {
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .form-filter {
@@ -1440,7 +1452,7 @@ body {
 
 .form-filter__btn {
 	width: 140px;
-	
+
 	font-family: "PT Sans", "Open Sans", sans-serif;	
 	font-size: 13px;
 	line-height: 18px;
@@ -1545,4 +1557,8 @@ body {
 	font-family: "PT Sans", "Open Sans", sans-serif;	
 	font-size: 13px;
 	line-height: 24px;
+}
+
+.add-cart .form__btn {
+	width: 220px;
 }
