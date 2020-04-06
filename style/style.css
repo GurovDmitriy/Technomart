@@ -1015,8 +1015,6 @@ body {
 	color: rgba(50, 66, 92, 1);
 }
 
-.manufactured__link {}
-
 .manufactured-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -1041,7 +1039,25 @@ body {
 
 	text-decoration: none;
 
+	background-color: #ffffff;
 	border: 1px solid rgba(244, 234, 234, 1);
+
+	transform: scale(1);
+	transition: 0.5s;		
+}
+
+.manufactured-list__item:hover {
+	box-shadow: 0 3px 20px 0 #000000;	
+
+	transform: scale(1.1);
+	transition: 0.5s;
+}
+
+.manufactured-list__item:active {
+	box-shadow: 0 3px 20px 0 #000000;	
+
+	transform: scale(0.8);
+	transition: 0.5s;
 }
 
 .manufactured-list__img {}
@@ -1109,6 +1125,10 @@ body {
 	background-color: rgba(50, 66, 91, 1);
 }
 
+.advantages-menu__link:hover {
+	background-color: #293449;
+}
+
 .advantages-menu__link--active {
 	color: rgba(50, 66, 91, 1);
 
@@ -1133,20 +1153,23 @@ body {
 	padding-top: 57px;
 	padding-left: 80px;
 
-	background: url("../image/png/min/css_sprites.png") right 130px no-repeat;	
+	background: url("../image/png/min/css_sprites.png") right 133px no-repeat;	
 }
 
 .advantages-list__item--show {
 	display: block;
 }
 
+.advantages-menu__link--active:hover {
+	background-color: #ffffff;
+}
 
 .advantages-list__item:nth-of-type(2) {
-	background-position: right -740px;
+	background-position: right -751px;
 }
 
 .advantages-list__item:nth-of-type(3) {
-	background-position: right bottom;
+	background-position: right -1663px;
 }
 
 .advantages-list__caption {
@@ -1211,14 +1234,35 @@ body {
 
 .about-company-list {
 	margin: 0;
+	margin-left: 50px;
 	padding: 0;
 
 	list-style: none;
 }
 
 .about-company-list__item {
+	position: relative;
+
+	margin-bottom: 10px;
+
 	font-size: 18px;
 	line-height: 20px;
+}
+
+.about-company-list__item::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: -50px;
+
+	display: block;
+	
+	width: 40px;
+	height: 2px;
+
+	background-color: #ee3643;
+
+	transform: translate(0, -50%);
 }
 
 .about-company__link {
