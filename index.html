@@ -101,7 +101,9 @@
 				<ul class="order-list">
 					<li class="order-list__item">
 						<a class="order-list__link" href="#">
-
+							<svg class="icon order-list__icon-cart" width="17px" height="17px">
+								<use xlink:href="#cart-icon"></use>
+							</svg>	
 							Закладки: <span>0</span>
 						</a>
 					</li>
@@ -397,7 +399,7 @@
 				<img class="map__img" src="image/img/min/map-mini-min.jpg" width="300" height="158" alt="Карта">
 				<a class="map__link btn" href="#">Заблудились? Напишите нам!</a>
 				<div class="map-popup">
-					<button class="map-popup__btn"><span class="visually-hidden">Закрыть</span></button>
+					<button class="map-popup__btn btn-close"><span class="visually-hidden">Закрыть</span></button>
 				</div>
 				<section class="form-popup">
 					<h2 class="visually-hidden">Форма обратной связи</h2>
@@ -419,7 +421,7 @@
 						<div class="form__item form__item-submit">
 						<button class="form__btn form__btn-submit btn" type="submit">Отправить</button>
 						</div>
-						<button class="form__btn form__btn-close visually-hidden" type="submit">Закрыть</button>
+						<button class="btn-close" type="submit"><span class="visually-hidden">Закрыть</span></button>
 					</form>
 				</section>
 			</section>
@@ -435,7 +437,7 @@
 					<ul class="nav-site nav-site__footer">
 						<li class="nav-site__item"><a class="nav-site__link" href="#">Главная</a></li>
 						<li class="nav-site__item"><a class="nav-site__link" href="#">Компания</a></li>
-						<li class="nav-site__item"><a class="nav-site__link" href="#">Каталог</a></li>
+						<li class="nav-site__item"><a class="nav-site__link" href="index.html">Каталог</a></li>
 						<li class="nav-site__item"><a class="nav-site__link" href="#">Новости</a></li>
 						<li class="nav-site__item"><a class="nav-site__link" href="#">Спецпредложения</a></li>
 						<li class="nav-site__item"><a class="nav-site__link" href="#">Доставка</a></li>
@@ -453,9 +455,30 @@
 				<h2 class="visually-hidden">Информация о правах</h2>
 				<strong class="copyright__text">© 2010–2017 Компания «Техномарт» Все права защищены</strong>
 				<ul class="social-list">
-					<li class="social-list__item"><a class="social-list__link" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
-					<li class="social-list__item"><a class="social-list__link" href="#"><span class="visually-hidden">Фэйсбук</span></a></li>
-					<li class="social-list__item"><a class="social-list__link" href="#"><span class="visually-hidden">Инстаграмм</span></a></li>
+					<li class="social-list__item">
+						<a class="social-list__link" href="#">
+							<svg class="icon social-vk-icon" width="26px" height="15px">
+								<use xlink:href="#vk-icon"></use>
+							</svg>							
+							<span class="visually-hidden">Вконтакте</span>
+						</a>
+					</li>
+					<li class="social-list__item">
+						<a class="social-list__link" href="#">
+							<svg class="icon social-fb-icon" width="12px" height="22px">
+								<use xlink:href="#fb-icon"></use>
+							</svg>								
+							<span class="visually-hidden">Фэйсбук</span>
+						</a>
+					</li>
+					<li class="social-list__item">
+						<a class="social-list__link" href="#">
+							<svg class="icon social-insta-icon" width="21px" height="px">
+								<use xlink:href="#insta-icon"></use>
+							</svg>								
+							<span class="visually-hidden">Инстаграмм</span>
+						</a>
+					</li>
 				</ul>
 				<a class="copyright__link" href="mailto:mail@htmlacademy.ru">Обратная связь: <br><span>mail@htmlacademy.ru</span></a>
 				<a class="copyright__link" href="https://htmlacademy.ru">Разработано - <br><span>htmlacademy.ru</span></a>
