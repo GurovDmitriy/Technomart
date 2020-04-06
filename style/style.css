@@ -1629,6 +1629,8 @@ body {
 
 /* Каталог */
 .main-catalog {
+position: relative;
+
  padding-top: 0;
 }
 
@@ -1707,10 +1709,67 @@ body {
 	justify-content: space-between;
 }
 
-.add-cart {
+.cart-popup {
+	display: none;
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 50%;
+
+	transform: translate(-50%, 0);
+}
+
+.cart-popup .btn {
+	width: 220px;
+}
+
+.cart-popup .form-inner {
+	margin-bottom: 70px;
+}
+
+.cart-popup .form__text {
+	position: relative;
+	flex-shrink: 0;
+	margin: 0 auto;
+	font-size: 30px;
+	line-height: 18px;
+	text-align: center;
+	color: rgba(0, 0, 0, 1);
+}
+
+.cart-popup .form__text::before {
+	position: absolute;
+	content: "";
+	top: 50%;
+	left: -50px;
+
+	width: 66px;
+	height: 66px;
+
+	border-radius: 50%;
+	background-color: #63a63e;
+
+	transform: translate(-50%, -50%);
+}
+
+.cart-popup .form__text::after {
+	position: absolute;
+	content: "";
+	top: 50%;
+	left: -50px;
+
+	width: 40px;
+	height: 20px;
+
+	border: 10px solid #ffff;
+	background-color: #63a63e;
+	border-right: none;
+	border-top: none;
+
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.cart-popup--show {
+	display: block;
 }
 
 .form-filter {
