@@ -82,4 +82,3 @@ loginOut.addEventListener("click", function() {
 	loginMenuIn.classList.toggle('nav-login--show');
 	loginPopup.classList.toggle('nav-login--show');
 });
-
