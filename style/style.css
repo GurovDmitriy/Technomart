@@ -183,7 +183,7 @@ body {
 .header {
 	padding-bottom: 60px;
 
-	background: rgba(243, 247, 248, 1);
+	background: #f3f7f8;
 }
 
 .menu-box {
@@ -1343,9 +1343,10 @@ body {
 }
 
 .map-popup {
-	position: absolute;
-	right: 0;
-	top: -25%;
+	position: fixed;
+	z-index: 200;
+	left: 50%;
+	top: 50%;	
 
 	display: none;
 	width: 940px;
@@ -1353,21 +1354,56 @@ body {
 
 	background: rgba(238, 234, 227, 1) url("../image/img/min/map-big-min.jpg") no-repeat;
 	box-shadow:  0 8px 16px 8px rgba(0, 0, 0, 0.5);
+
+	transform: translate(-50%, -50%);
 } 
 
 .map-popup--show {
 	display: block;
 }
 
- .form-popup {
-	position: absolute;
+.form-popup {
+	position: fixed;
 	display: none;
-	right: 50%;
-	bottom: 50%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 200;
 }
+
+@keyframes bounce {
+	0% { 
+		transform: translate(-2000px, -50%); 
+	}
+	70% { 
+		transform: translate(30px, -50%); 
+	}
+	90% { 
+		transform: translate(-10px, -50%); 
+	}
+	100% { 
+		transform: translate(0, -50%); 
+	}
+}		
 
 .form-popup--show {
 	display: block;
+	animation-name: bounce;
+	animation-duration: 0.6s;
+}
+
+@keyframes shake {
+	10%, 30%, 50%, 70%, 90% { 
+		transform: translate(-50%, -51%); 
+	}
+	20%, 40%, 60%, 80% { 
+		transform: translate(-50%, -50%); 
+	}
+}
+
+.form-popup--error {
+	animation-name: shake;
+	animation-duration: 0.6s;
 }
 
 .form {
@@ -1710,7 +1746,7 @@ position: relative;
 }
 
 .cart-popup {
-	display: none;
+	display: none;ment
 	position: absolute;
 	top: 0;
 	left: 50%;

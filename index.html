@@ -128,9 +128,9 @@
 					<a class="tel__link" href="tel:+78125550555">+7 (812) 555-05-55</a>
 					<p class="tel__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/18</p>
 				</div>
-				<ul class="nav-user">
+				<ul class="nav-user nav-login--show">
 					<li class="nav-user__item">
-						<a class="nav-user__link" href="#">
+						<a class="nav-user__link nav-user__link-in" href="#">
 							<svg class="icon nav-user__icon-login" width="20px" height="17px">
 								<use xlink:href="#icon-login"></use>
 							</svg>	
@@ -139,7 +139,7 @@
 					</li>
 					<li class="nav-user__item"><a class="nav-user__link" href="#">Регистрация</a></li>
 				</ul>
-				<ul class="nav-login nav-login--show">
+				<ul class="nav-login">
 					<li class="nav-login__item">
 						<a class="nav-login__link" href="#">
 							<svg class="icon nav-login__icon-logout" width="20px" height="17px">
@@ -399,9 +399,10 @@
 				<img class="map__img" src="image/img/min/map-mini-min.jpg" width="300" height="158" alt="Карта">
 				<a class="map__link btn" href="#">Заблудились? Напишите нам!</a>
 				<div class="map-popup">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412406!2d30.320894616211245!3d59.938796869047785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1586256837889!5m2!1sru!2sru" width="940" height="446" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 					<button class="map-popup__btn btn-close"><span class="visually-hidden">Закрыть</span></button>
 				</div>
-				<section class="form-popup form-popup--show">
+				<section class="form-popup">
 					<h2 class="visually-hidden">Форма обратной связи</h2>
 					<form class="form">
 						<div class="form-inner">
@@ -421,7 +422,7 @@
 						<div class="form__inner form__item-submit">
 						<button class="form__btn form__btn-submit btn" type="submit">Отправить</button>
 						</div>
-						<button class="btn-close" type="submit"><span class="visually-hidden">Закрыть</span></button>
+						<button class="btn-close btn-close-form" type="button"><span class="visually-hidden">Закрыть</span></button>
 					</form>
 				</section>
 			</section>
@@ -437,7 +438,7 @@
 					<ul class="nav-site nav-site__footer">
 						<li class="nav-site__item"><a class="nav-site__link" href="#">Главная</a></li>
 						<li class="nav-site__item"><a class="nav-site__link" href="#">Компания</a></li>
-						<li class="nav-site__item"><a class="nav-site__link" href="index.html">Каталог</a></li>
+						<li class="nav-site__item"><a class="nav-site__link" href="catalog.html">Каталог</a></li>
 						<li class="nav-site__item"><a class="nav-site__link" href="#">Новости</a></li>
 						<li class="nav-site__item"><a class="nav-site__link" href="#">Спецпредложения</a></li>
 						<li class="nav-site__item"><a class="nav-site__link" href="#">Доставка</a></li>
@@ -473,7 +474,7 @@
 					</li>
 					<li class="social-list__item">
 						<a class="social-list__link" href="#">
-							<svg class="icon social-insta-icon" width="21px" height="px">
+							<svg class="icon social-insta-icon" width="21px" height="21px">
 								<use xlink:href="#insta-icon"></use>
 							</svg>								
 							<span class="visually-hidden">Инстаграмм</span>
@@ -485,5 +486,6 @@
 			</section>
 		</div>
 	</footer>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
