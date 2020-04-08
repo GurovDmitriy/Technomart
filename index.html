@@ -108,11 +108,11 @@
 						</a>
 					</li>
 					<li class="order-list__item">
-						<a class="order-list__link" href="#">
+						<a class="order-list__link order-list__link-cart" href="#">
 							<svg class="icon order-list__icon-cart" width="17px" height="17px">
 								<use xlink:href="#cart-icon"></use>
 							</svg>	
-							Корзина: <span>0</span>
+							Корзина: <span class="cart-count">0</span>
 						</a>
 					</li>
 					<li class="order-list__item">
@@ -137,7 +137,7 @@
 							Войти
 						</a>
 					</li>
-					<li class="nav-user__item"><a class="nav-user__link" href="#">Регистрация</a></li>
+					<li class="nav-user__item"><a class="nav-user__link nav-user__link-reg" href="#">Регистрация</a></li>
 				</ul>
 				<ul class="nav-login">
 					<li class="nav-login__item">
@@ -147,13 +147,31 @@
 							</svg>
 							<svg class="icon nav-login__icon-user" width="20px" height="18px">
 								<use xlink:href="#icon-user"></use>
-							</svg>								
-							Гуров Дмитрий
+							</svg>
+							<span class="nav-login__link-user">Гуров Дмитрий</span>
 						</a>
 					</li>
 					<li class="nav-login__item"><a class="nav-login__link" href="#">Мои заказы</a></li>
 					<li class="nav-login__item"><a class="nav-login__link" href="#">Личный кабинет</a></li>
 				</ul>
+				<div class="form-reg form-popup">
+					<form class="form">
+						<div class="form-inner">
+							<div class="form-inner__item">
+								<label class="form-inner__label" for="name-field">Ваше имя:</label>
+								<input class="form-inner__input" type="text" name="name" id="name-field" placeholder="более 4 символов">
+							</div>
+							<div class="form-inner__item">
+								<label class="form-inner__label" for="soname-field">Ваша Фамилия</label>
+								<input class="form-inner__input" type="text" name="soname" id="soname-field"  placeholder="более 4 символов">
+							</div>
+						</div>
+						<div class="form__inner form__item-submit">
+						<button class="form__btn form__btn-submit btn" type="submit">Зарегистрироваться</button>
+						</div>
+						<button class="btn-close btn-close-form" type="button"><span class="visually-hidden">Закрыть</span></button>
+					</form>
+				</div>
 			</div>		
 			<ul class="nav-site">
 				<li class="nav-site__item"><a class="nav-site__link" href="#">Главная</a></li>
@@ -185,7 +203,7 @@
 					<a class="promo-list__link btn" href="#">На все случаи</a>
 				</li>
 				<li class="promo-list__item slider">
-					<div class="slider__item">
+					<div class="slider__item slider__item--show">
 						<h3 class="slider__caption">Перфораторы</h3>
 						<p class="slider__text">Настоящие мужские игрушки</p>				
 					</div>
@@ -486,7 +504,9 @@
 				<a class="copyright__link" href="https://htmlacademy.ru">Разработано - <br><span>htmlacademy.ru</span></a>
 			</section>
 		</div>
+		<button class="scroll-up btn" type="button">Наверх</button>
 	</footer>
 	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/script-login.js"></script>
 </body>
 </html>
