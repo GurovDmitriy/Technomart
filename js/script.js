@@ -30,7 +30,6 @@ window.addEventListener("keydown", function(evt) {
 	Открытие формы на главной
 	Проверка заполнения полей
 	Автофокус на первое поле
-	Не работает локал сторадж
 
 */
 
@@ -88,16 +87,22 @@ window.addEventListener("keydown", function(evt) {
 
 */
 
-/*let slider = document.querySelector(".slider");
-let sliderBtn = slider.querySelectorAll(".slider__btn");
-let slide = slider.querySelectorAll(".slider__item");
+/*let slides = document.querySelectorAll(".slider__item");
+let btnSliderPre = document.querySelector(".slider__btn-pre");
+let btnSliderNxt = document.querySelector(".slider__btn-next");
 
-for(let btn of sliderBtn) {
-	btn.onclick = function() {
-		for(let element of slide) {
-			element.classList.toggle("slider__item--show");
-		}
-	}
+
+let sliderSwicher = function(slide) {
+    btnSliderNxt.onclick = function() {
+      if(slide.classList.contains("slider__item--show")){
+        console.log(slide);
+      }
+      
+    }
+}
+
+for(let j = 0; j < slides.length; j++) {
+  sliderSwicher(slides[j]);
 };
 */
 
@@ -113,11 +118,19 @@ let menuAdvSlides = document.querySelectorAll(".advantages-list__item");
 let servisesSwitcher = function(menuAdvBtn, menuAdvSlide) {
   menuAdvBtn.onclick = function(evt) {
     evt.preventDefault();
+
+    for(let menuBtnClean of menuAdvBtns) {
+      if(menuBtnClean !== menuAdvBtn && menuBtnClean.classList.contains("advantages-menu__link--active")) {
+        menuBtnClean.classList.remove("advantages-menu__link--active");
+      }
+    }
+
     for(let menuSlideClean of menuAdvSlides) {
       if(menuSlideClean !== menuAdvSlide && menuSlideClean.classList.contains("advantages-list__item--show")) {
         menuSlideClean.classList.remove("advantages-list__item--show");
       }
     }
+    menuAdvBtn.classList.add("advantages-menu__link--active");
     menuAdvSlide.classList.add("advantages-list__item--show");
   }
 }
@@ -129,7 +142,7 @@ for(let i = 0; i < menuAdvBtns.length; i++) {
 /*Имитация регистрации
   нерабочая*/
 
-let formPopupReg = document.querySelector('.form-reg');
+/*let formPopupReg = document.querySelector('.form-reg');
 let formPopupRegBtn = document.querySelector('.nav-user__link-reg');
 let formPopupRegClose = formPopupReg.querySelector('.btn-close-form');
 
@@ -174,4 +187,4 @@ window.addEventListener("keydown", function(evt) {
     }
   }
 });
-
+*/

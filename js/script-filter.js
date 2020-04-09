@@ -9,7 +9,7 @@ let catalog = document.querySelector(".catalog-list");
 
 flexBtn.onclick = function(){
   flexBtn.classList.toggle("visual-btn--list");
-  catalog.classList.toggle("products-list--list");
+  catalog.classList.toggle("catalog-list--list");
 }
 
 /*
