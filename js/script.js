@@ -100,35 +100,34 @@ for(let btn of sliderBtn) {
 	}
 };
 */
+
 /*
 
 	Переключение меню сервисов на главной
 
 */
 
-/*let menuAdv = document.querySelector(".advantages-menu");
-let menuAdvBtn = menuAdv.querySelectorAll(".advantages-menu__link");
-let menuAdvSlider = document.querySelector(".advantages-list");
-let menuAdvAlide = menuAdvSlider.querySelectorAll(".advantages-list__item");
+let menuAdvBtns = document.querySelectorAll(".advantages-menu__link");
+let menuAdvSlides = document.querySelectorAll(".advantages-list__item");
 
-for(let btn of menuAdvBtn) {
-	btn.onclick = function(evt) {
-		evt.preventDefault();
-		if(!btn.classList.contains("advantages-menu__link--active")){
-			btn.classList.add("advantages-menu__link--active");
-		} 
-	}
-	if(btn.classList.contains("advantages-menu__link--active")) {
-		btn.classList.remove"advantages-menu__link--active");
-	}
-};*/
+let servisesSwitcher = function(menuAdvBtn, menuAdvSlide) {
+  menuAdvBtn.onclick = function(evt) {
+    evt.preventDefault();
+    for(let menuSlideClean of menuAdvSlides) {
+      if(menuSlideClean !== menuAdvSlide && menuSlideClean.classList.contains("advantages-list__item--show")) {
+        menuSlideClean.classList.remove("advantages-list__item--show");
+      }
+    }
+    menuAdvSlide.classList.add("advantages-list__item--show");
+  }
+}
 
-/*
+for(let i = 0; i < menuAdvBtns.length; i++) {
+  servisesSwitcher(menuAdvBtns[i], menuAdvSlides[i]);
+};
 
-  Имитация регистрации
-  нерабочая
-
-*/
+/*Имитация регистрации
+  нерабочая*/
 
 let formPopupReg = document.querySelector('.form-reg');
 let formPopupRegBtn = document.querySelector('.nav-user__link-reg');
